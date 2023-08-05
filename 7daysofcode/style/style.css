@@ -15,6 +15,10 @@
     --cor-cinza: #EAECF0;
 }
 
+body {
+    background-color: white;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -64,6 +68,7 @@ nav > section > a {
     font-weight: normal;
     line-height: 24px;
     font-size: 16px;
+    outline: none;
 }
 
 .login {
@@ -82,6 +87,7 @@ nav > section > a {
     border: none;
     line-height: 24px;
     cursor: pointer;
+    outline: none;
 }
 
 .cadastrar {
@@ -93,6 +99,7 @@ nav > section > a {
     border: 1px solid var(--cor-red);
     border-radius: 8px;
     cursor: pointer;
+    outline: none;
 }
 
 
@@ -257,6 +264,7 @@ nav > section > a {
     background-color: rgb(255, 246, 246);
     border-radius: 16px;
     width: 1280px;
+    margin-bottom: 80px;
 }
 
 .depoimentos > span {
@@ -292,3 +300,64 @@ span.funcao {
     line-height: 20px;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+    width: 99vw;
+    background-color: #F9FAFB;
+    padding: 60px 0px 50px 0px;
+}
+
+.footer > span {
+    font: normal 600 36px 'Inter', sans-serif;
+    color: var(--cor-preta);
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    text-align: center;
+}
+
+.footer > p {
+    text-align: center;
+    font: normal 500 20px 'Inter', sans-serif;
+    color: var(--cor-texto);
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+p.direitos {
+    font: normal 400 16px 'Inter', sans-serif;
+    color: #98A2B3;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+.textfield > input {
+    width: 300px;
+    padding: 9px 18px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    line-height: 24px;
+    outline: 0px;
+}
+
+.textfield > button {
+    font-size: 16px;
+    color: white;
+    background-color: var(--cor-red);
+    padding: 8px 18px;
+    border: 1px solid var(--cor-red);
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    line-height: 24px;
+
+    margin-left: 10px;
+}
+
+.textfield > input::placeholder {
+    color: var(--cor-texto);
+}
