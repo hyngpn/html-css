@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <section>
+            <span>Acompanhe as Novidades!</span>
+            <form action="cadastro.php" autocomplete="on">
+                <div class="usuario">
+                    <label for="iuser">User</label>
+                    <input type="text" name="user" id="iuser" required minlength="2" maxlength="20" autocomplete="username" placeholder="username">
+                </div>
+                <div class="sen">
+                    <label for="ipass">Password</label>
+                    <input type="password" name="pass" id="ipass" required minlength="8" maxlength="20" autocomplete="current-password" placeholder="Password">
+                </div>
+                <div class="enter">
+                    <input type="submit" value="Submit">
+                    <p><a href="#">Forgot Password?</a></p>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

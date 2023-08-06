@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Roboto';
+}
+
+:root {
+    --cor-1: #F2EFDF;
+    --cor-2: #D8D9C5;
+    --cor-3: #6C868C;
+}
+
+body {
+    background: black url(images/pexels-johannes-plenio-1103970.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 16%;
+    width: 450px;
+    gap: 50px;
+    max-height: 350px;
+    height: 50vw;
+    background-image: linear-gradient(#dfebf2be, #f2eddfb4) ;
+    border: 1px solid var(--cor-1);
+    border-radius: 20px;
+}
+
+section > span {
+    text-align: center;
+    font: normal 600 32px 'Inter', sans-serif;
+}
+
+#iuser, label {
+    display: flex;
+    flex-direction: column;
+    color: gainsboro;
+}
+
+#ipass {
+    display: flex;
+    flex-direction: column;
+}
